@@ -1,3 +1,5 @@
+/* This was my first code written independently in C. My knowledge of the language at the time was quite limited, so I ask that you disregard the bad practices involved in developing this code. */ 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -27,7 +29,7 @@ int main(int argc, char *argv[]) {
 					system("cls");
 					loop1:
 					puts("\t\t//--------------SOMA---------------\\\\\n\t\t\\\\----PRESSIONE 'B' PARA VOLTAR----//\n");
-					puts("Deseja utilizar o resultado acumulado na próxima operação? [s/n]\n");
+					puts("Deseja utilizar o resultado acumulado na prÃ³xima operaÃ§Ã£o? [s/n]\n");
 					per = getch();
 					switch(per) {
 						case 'n':
@@ -51,7 +53,7 @@ int main(int argc, char *argv[]) {
 								case 'n':
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto loop2;
@@ -79,7 +81,7 @@ int main(int argc, char *argv[]) {
 									getch();
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto loop3;
@@ -90,7 +92,7 @@ int main(int argc, char *argv[]) {
 							goto final;
 							break;
 						default:
-							puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+							puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 							getch();
 							system("cls");
 							goto loop1;
@@ -101,15 +103,15 @@ int main(int argc, char *argv[]) {
 				case 2:
 					system("cls");
 					Loop4:
-					puts("\t\t//--------------SUBTRAÇÃO--------------\\\\\n\t\t\\\\------PRESSIONE 'B' PARA VOLTAR------//\n");
-					puts("Deseja utilizar o resultado acumulado na próxima operação? [s/n]\n");
+					puts("\t\t//--------------SUBTRAÃ‡ÃƒO--------------\\\\\n\t\t\\\\------PRESSIONE 'B' PARA VOLTAR------//\n");
+					puts("Deseja utilizar o resultado acumulado na prÃ³xima operaÃ§Ã£o? [s/n]\n");
 					per = getch();
 					switch(per) {
 						case 'n':
-							puts("Informe o Minuendo da Subtração: ");
+							puts("Informe o Minuendo da SubtraÃ§Ã£o: ");
 							scanf("%lf", &val1);
 							fflush(stdin);
-							puts("Informe o Subtraendo da Subtração: ");
+							puts("Informe o Subtraendo da SubtraÃ§Ã£o: ");
 							scanf("%lf", &val2);
 							fflush(stdin);
 							resultado_temp = subtr(val1, val2);
@@ -126,7 +128,7 @@ int main(int argc, char *argv[]) {
 								case 'n':
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto Loop5;
@@ -135,7 +137,7 @@ int main(int argc, char *argv[]) {
 							break;
 
 						case 's':
-							puts("Informe o Subtraendo da Subtração:");
+							puts("Informe o Subtraendo da SubtraÃ§Ã£o:");
 							scanf("%lf", &val1);
 							fflush(stdin);
 							resultado_temp = subtr(val1, resultado);
@@ -154,7 +156,7 @@ int main(int argc, char *argv[]) {
 									getch();
 									break;
 								default:
-									puts("Opção Inválida!!! Pressione Qualquer Tecla para Prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida!!! Pressione Qualquer Tecla para Prosseguir.");
 									getch();
 									system("cls");
 									goto Loop6;
@@ -165,7 +167,7 @@ int main(int argc, char *argv[]) {
 							goto final;
 							break;
 						default:
-							puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+							puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 							getch();
 							system("cls");
 							goto Loop4;
@@ -175,8 +177,8 @@ int main(int argc, char *argv[]) {
 				case 3:
                     system("cls");
 					Loop7:
-					puts("\t\t//--------------MULTIPLICAÇÃO--------------\\\\\n\t\t\\\\--------PRESSIONE 'B' PARA VOLTAR--------//\n");
-					puts("Deseja utilizar o resultado acumulado na próxima operação? [s/n]\n");
+					puts("\t\t//--------------MULTIPLICAÃ‡ÃƒO--------------\\\\\n\t\t\\\\--------PRESSIONE 'B' PARA VOLTAR--------//\n");
+					puts("Deseja utilizar o resultado acumulado na prÃ³xima operaÃ§Ã£o? [s/n]\n");
 					per = getch();
 					switch(per) {
 						case 'n':
@@ -200,7 +202,7 @@ int main(int argc, char *argv[]) {
 								case 'n':
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto Loop8;
@@ -209,7 +211,7 @@ int main(int argc, char *argv[]) {
 							break;
 
 						case 's':
-							puts("Informe o segundo fator da multiplicação: ");
+							puts("Informe o segundo fator da multiplicaÃ§Ã£o: ");
 							scanf("%lf", &val1);
 							fflush(stdin);
 							resultado_temp = mult(val1, resultado);
@@ -228,7 +230,7 @@ int main(int argc, char *argv[]) {
 									getch();
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto Loop9;
@@ -239,7 +241,7 @@ int main(int argc, char *argv[]) {
 							goto final;
 							break;
 						default:
-							puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+							puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 							getch();
 							system("cls");
 							goto Loop7;
@@ -249,20 +251,20 @@ int main(int argc, char *argv[]) {
 				case 4:
                     system("cls");
 					Loop10:
-					puts("\t\t//--------------DIVISÃO--------------\\\\\n\t\t\\\\-----PRESSIONE 'B' PARA VOLTAR-----//\n");
-					puts("Deseja Utilizar o Resultado Acumulado na Próxima Operação? [s/n]\n");
+					puts("\t\t//--------------DIVISÃƒO--------------\\\\\n\t\t\\\\-----PRESSIONE 'B' PARA VOLTAR-----//\n");
+					puts("Deseja Utilizar o Resultado Acumulado na PrÃ³xima OperaÃ§Ã£o? [s/n]\n");
 					per = getch();
 					switch(per) {
 						case 'n':
-							puts("Informe o Dividendo da Divisão: ");
+							puts("Informe o Dividendo da DivisÃ£o: ");
 							scanf("%lf", &val1);
 							fflush(stdin);
-							puts("Informe o Divisor da Divisão: ");
+							puts("Informe o Divisor da DivisÃ£o: ");
 							scanf("%lf", &val2);
 							fflush(stdin);
 							if(val1 == 0 && val2 == 0) {
                                 system("cls");
-                                puts("!!! ERRO !!!\nO Resultado '0/0' é uma Indeterminação Matemática.");
+                                puts("!!! ERRO !!!\nO Resultado '0/0' Ã© uma IndeterminaÃ§Ã£o MatemÃ¡tica.");
                                 puts("Pressione qualquer tecla para prosseguir.");
                                 getch();
                                 system("cls");
@@ -271,7 +273,7 @@ int main(int argc, char *argv[]) {
 							else {
                                 if(val2 == 0) {
                                     system("cls");
-                                    puts("!!! ERRO !!!\nTentativa de Divisão por Zero.");
+                                    puts("!!! ERRO !!!\nTentativa de DivisÃ£o por Zero.");
                                     puts("Pressione qualquer tecla para prosseguir.");
 									getch();
                                     system("cls");
@@ -292,7 +294,7 @@ int main(int argc, char *argv[]) {
 								case 'n':
 									break;
 								default:
-									puts("Opção Inválida!!! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida!!! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto Loop11;
@@ -301,12 +303,12 @@ int main(int argc, char *argv[]) {
 							break;
 
 						case 's':
-							puts("Informe o Divisor da Divisão: ");
+							puts("Informe o Divisor da DivisÃ£o: ");
 							scanf("%lf", &val1);
 							fflush(stdin);
 							if(val1 == 0 && resultado_temp == 0) {
                                 system("cls");
-                                puts("!!! ERRO !!!\nO Resultado '0/0' é uma Indeterminação Matemática.");
+                                puts("!!! ERRO !!!\nO Resultado '0/0' Ã© uma IndeterminaÃ§Ã£o MatemÃ¡tica.");
                                 puts("Pressione qualquer tecla para prosseguir.");
                                 getch();
                                 system("cls");
@@ -315,7 +317,7 @@ int main(int argc, char *argv[]) {
 							else {
                                 if(val1 == 0) {
                                     system("cls");
-                                    puts("!!! ERRO !!!\nTentativa de Divisão por Zero.");
+                                    puts("!!! ERRO !!!\nTentativa de DivisÃ£o por Zero.");
                                     puts("Pressione qualquer tecla para prosseguir.");
 									getch();
                                     system("cls");
@@ -338,7 +340,7 @@ int main(int argc, char *argv[]) {
 									getch();
 									break;
 								default:
-									puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+									puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 									getch();
 									system("cls");
 									goto Loop12;
@@ -349,7 +351,7 @@ int main(int argc, char *argv[]) {
 							goto final;
 							break;
 						default:
-							puts("Opção Inválida! Pressione qualquer tecla para prosseguir.");
+							puts("OpÃ§Ã£o InvÃ¡lida! Pressione qualquer tecla para prosseguir.");
 							getch();
 							system("cls");
 							goto Loop10;
@@ -362,7 +364,7 @@ int main(int argc, char *argv[]) {
 				default:
 					system("cls");
 					puts("!!! ERRO !!!");
-					puts("Entrada inválida, selecione uma das opções disponíveis no menu.");
+					puts("Entrada invÃ¡lida, selecione uma das opÃ§Ãµes disponÃ­veis no menu.");
 					getch();
 					break;
 			}
@@ -371,7 +373,7 @@ int main(int argc, char *argv[]) {
 		system("cls");
 		apresent();
 	}
-	puts("\n\033[32mObrigado por utilizar meu primeiro protótipo de Calculadora em linguagem C !!!\033[0m");
+	puts("\n\033[32mObrigado por utilizar meu primeiro protÃ³tipo de Calculadora em linguagem C !!!\033[0m");
 	getch();
 	puts("\n\033[33mAss.:\033[0m \033[33mAllber Fellype\033[0m\n");
 	getch();
@@ -387,7 +389,7 @@ void apresent() {
 	puts("\tDigite 3 + ENTER para Multiplicar;");
 	puts("\tDigite 4 + ENTER para Dividir;");
 	puts("\tDigite 5 + ENTER para Limpar o Resultado Acumulado");
-	puts("\tDigite CTRL + Z e ENTER para encerrar as operações !");
+	puts("\tDigite CTRL + Z e ENTER para encerrar as operaÃ§Ãµes !");
 	printf("\n\n  RESULTADO ATUAL ACUMULADO:\t%lf\n", resultado);
 	puts("\\-----------------------------------------------------------------/");
 	printf("\n>>>>\t");
